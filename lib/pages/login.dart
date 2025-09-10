@@ -139,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
     );
     http
         .post(
-          Uri.parse("http://192.168.60.7:3000/customers/login"),
+          Uri.parse("http://10.160.155.9:3000/customers/login"),
           // Uri.parse("$url/customers/login"),
           // Uri.parse("$API_ENDPOINT/customer/login"),
           headers: {"Content-Type": "application/json; charset=utf-8"},

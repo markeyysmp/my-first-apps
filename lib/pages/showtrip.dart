@@ -16,7 +16,7 @@ class ShowTripPage extends StatefulWidget {
 }
 
 class _ShowTripPageState extends State<ShowTripPage> {
-  final String uri = "http://192.168.60.7:3000";
+  final String uri = "http://10.160.155.9:3000";
 
   List<TripRes> allTrips = [];
   List<TripRes> filteredTrips = [];
