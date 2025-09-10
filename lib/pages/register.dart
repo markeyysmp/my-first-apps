@@ -31,30 +31,24 @@ class _RegisterPageState extends State<RegisterPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // ชื่อ-นามสกุล
               fieldLabel("ชื่อ-นามสกุล", nameCtl),
               const SizedBox(height: 8),
-              // หมายเลขโทรศัพท์
               fieldLabel(
                 "หมายเลขโทรศัพท์",
                 phoneCtl,
                 keyboard: TextInputType.phone,
               ),
               const SizedBox(height: 8),
-              // อีเมล์
               fieldLabel(
                 "อีเมล์",
                 emailCtl,
                 keyboard: TextInputType.emailAddress,
               ),
               const SizedBox(height: 8),
-              // รหัสผ่าน
               fieldLabel("รหัสผ่าน", passwordCtl, obscure: true),
               const SizedBox(height: 8),
-              // ยืนยันรหัสผ่าน
               fieldLabel("ยืนยันรหัสผ่าน", confirmCtl, obscure: true),
               const SizedBox(height: 16),
-              // ปุ่มสมัครสมาชิก
               FilledButton(
                 onPressed: register,
                 child: const Text(
@@ -146,7 +140,7 @@ class _RegisterPageState extends State<RegisterPage> {
       phone: phone,
       email: email,
       password: password,
-      image: '', // placeholder
+      image: '', 
     );
 
     try {
